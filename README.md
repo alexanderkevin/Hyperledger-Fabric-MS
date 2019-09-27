@@ -1,7 +1,7 @@
 # Hyperledger Fabric Microservices
 
 This is the microservices part that are interacting with the chaincode on this repository 
-[Hyperledger Fabric Chaincode](https://github.com/alexanderkevin/Hyperledger-Fabric-MS)
+[Hyperledger Fabric Chaincode](https://github.com/alexanderkevin/Hyperledger-Fabric-Chaincode)
 
 The microservices itself will be divided into three seperate services that will each work correspondingly with their respective smart contract.
 
@@ -55,7 +55,7 @@ npm install
 ### Step 3
 
 Get the fabric certificate:
-> This part expect you to have succesfully installed the [Hyperledger Fabric Chaincode](https://github.com/alexanderkevin/Hyperledger-Fabric-MS)
+> This part expect you to have succesfully installed the [Hyperledger Fabric Chaincode](https://github.com/alexanderkevin/Hyperledger-Fabric-Chaincode)
 
 1. In your Visual Studio Code click on the IBM Blockchain Platform icon (on the side bar)
 2. Right click `Export Wallet` on the local fabric wallet in the Fabric Wallets menu
