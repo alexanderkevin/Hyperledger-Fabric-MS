@@ -60,7 +60,7 @@ This microservices would interact with the `carContract` smart contract. It has 
 * Get block history of specific car
 * Delete Car Record
 
-### Initiatice MS Person
+### Initiative MS Person
 This microservices would interact with the `personContract` smart contract. It has several method such as:
 * Create Person
 * Update Person
@@ -70,7 +70,7 @@ This microservices would interact with the `personContract` smart contract. It h
 * Get block history of specific Person
 * Delete Person Record
 
-### Initiatice MS Transaction
+### Initiative MS Transaction
 This microservices would interact with the `transactionContract` smart contract. It has several method such as:
 * Buy new Car
 * Transfer Car's ownership
