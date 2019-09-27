@@ -7,6 +7,32 @@ The microservices itself will be divided into three seperate services that will 
 
 This microservices are build using Express and NodeJS. The interaction with the chaincode are done using `fabric-network` npm library. 
 
+## The Story
+Someday a `Person` is going to buy a `Car`. The Person would need to `Register` itself on the blockchain before he can buy that dream car.
+
+>The System will Invoke the `/person/register` 
+
+After the Person data has been recorded on Blockchain, He will `Request` a car to be made.
+
+>The System will Invoke the `/car/requestCar`
+
+The manufacturer would then start to `Make` the requested car.
+
+>The System will invoke the `/car/manufacture/{id}`
+
+After the car has been made then the manufacturer would let the person `Buy` the car
+
+>The System will Invoke the `/transaction/buyCar`
+
+Voila! now the car are permanently recorded on the blockchain for that person
+
+If the Person want to see when and what are the `History` of the car. He can directly refer to the ledger on the blockchain.
+
+>The System will provide all of the history of the block by Invoking `/car/history/{id}`
+
+Someday the person decided to `Transfer` the car to his son and so The Sytem will ... (we will let you figure this part yourself)
+
+
 ## How to run
 This section will provide explanation on how to run the MS side of the application locally on your machine. 
 
