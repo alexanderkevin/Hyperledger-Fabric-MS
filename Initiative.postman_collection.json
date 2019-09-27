@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "ce0f32bf-9d26-49ec-b88d-7db435f099f7",
+		"name": "Initiative",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"4\",\n\t\"name\":\"Lawrence\",\n\t\"gender\":\"Male\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3001/person/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/person/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id - History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/person/history/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"history",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/person/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Owned Car by Person Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/person/2/car",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"2",
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":2,\n\t\"name\":\"Dilan\",\n\t\"gender\":\"Male\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3001/person/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/person/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"person",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"4\",\n\t\"name\":\"Avanza\",\n\t\"manufacture\":\"Toyota\",\n\t\"year\":2019\n}"
+						},
+						"url": {
+							"raw": "localhost:3002/car/request",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Manufacture",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3002/car/manufacture/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"manufacture",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id - History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Buy Car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"car_id\":2,\n\t\"person_id\":2\n}"
+						},
+						"url": {
+							"raw": "localhost:3003/transaction/buyCar",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"transaction",
+								"buyCar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer Car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"car_id\":2,\n\t\"person_id\":1\n}"
+						},
+						"url": {
+							"raw": "localhost:3003/transaction/transferCar",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"transaction",
+								"transferCar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/car/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3002/",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
