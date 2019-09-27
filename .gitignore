@@ -35,11 +35,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-<<<<<<< HEAD
 local_fabric_wallet/
 log/
-=======
->>>>>>> df227cfd06677c039b7e6a87ad3c172cf0b524b9
 
 # TypeScript v1 declaration files
 typings/
